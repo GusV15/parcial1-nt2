@@ -163,13 +163,12 @@
       },
       calcularPromedio() {
         this.notes.forEach(({note}) => {
-          this.promedio += note;
+          this.promedio += +note;
         });
         this.promedio = this.promedio / this.notes.length;
       }
     },
     computed: {
-
     }
 }
 
